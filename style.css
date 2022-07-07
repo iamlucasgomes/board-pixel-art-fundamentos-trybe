@@ -1,0 +1,92 @@
+@font-face {
+  font-family: cccoverbyte;
+  src: url('font/CCOverbyteOff-Italic.ttf');
+}
+
+@font-face {
+  font-family: cccoverbyteRegular;
+  src: url('font/CCOverbyteOnW00-Regular.ttf');
+}
+
+body {
+  background-image: url('img/b82f28a7e9c8fcb3868d3d94652c107c.gif');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: cccoverbyteRegular, fantasy;
+}
+
+h1 {
+  font-family: cccoverbyteRegular, fantasy;
+  font-size: 50px;
+  color: rgb(42, 90, 134);
+}
+
+.color {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 10%;
+  margin: 3px;
+}
+
+#pixel-board {
+
+  --size: 10;
+  background-color: black;
+  box-sizing: border-box;
+  height: 380px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.pixel {
+  margin: 0;
+  border: 1px solid black;
+  justify-items: center;
+}
+
+button {
+  background: white;
+  color: black;
+  font-style: italic;
+  font-family: inherit;
+  padding: 0.1em 0.5em;
+  font-size: 15px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin: 3px;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.input-wrapper {
+  background-color: #eee;
+  padding: 0.3rem;
+  font-size: 1rem;
+  width: 13em;
+  color: black;
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin: 3px;
+}
+
+.input-wrapper:focus {
+  outline-color: black;
+}
